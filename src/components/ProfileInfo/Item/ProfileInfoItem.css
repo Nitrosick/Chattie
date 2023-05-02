@@ -1,0 +1,19 @@
+.profile_info_item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.profile_info_item_title {
+  line-height: 40px;
+  color: #5b5d6a;
+  font-size: 16px;
+  padding-left: 10px;
+  border-left: 10px solid #383942;
+  cursor: pointer;
+}
+.profile_info_item_title::after {
+  content: ':';
+}
+.profile_info_item_value {
+  cursor: pointer;
+}

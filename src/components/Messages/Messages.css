@@ -1,0 +1,19 @@
+.messages_box {
+  flex-grow: 1;
+  overflow-y: scroll;
+}
+.messages {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-bottom: 50px;
+  padding-right: 25px;
+}
+.messages_shadow {
+  position: absolute;
+  left: 0;
+  bottom: 75px;
+  right: 0;
+  height: 50px;
+  background: linear-gradient(transparent, #27282E);
+}

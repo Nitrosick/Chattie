@@ -1,0 +1,23 @@
+.welcome_page {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.welcome_page_title {
+  text-transform: uppercase;
+  line-height: 50px;
+  padding-bottom: 16px;
+  margin-bottom: 16px;
+  border-bottom: 1px solid #5b5d6a;
+  letter-spacing: 2px;
+}
+.welcome_page_mark {
+  margin: 0 16px;
+  color: #27282E;
+  font-size: 60px;
+  background: linear-gradient(45deg, #a95dff, #76e4ff);
+  -webkit-background-clip: text;
+  -webkit-text-stroke: 3px transparent;
+}

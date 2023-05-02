@@ -1,0 +1,47 @@
+.user {
+  display: flex;
+  height: 75px;
+  background-color: #5b5d6a;
+  clip-path: polygon(0 0, calc(100% - 10px) 0, 100% 10px, 100% 100%, 10px 100%, 0 calc(100% - 10px));
+}
+.user_link {
+  flex-grow: 1;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.user .avatar_container {
+  margin: 0 15px;
+}
+.user_info {
+  flex-grow: 1;
+}
+.user_name {
+  font-weight: 600;
+}
+.user_splitter {
+  margin: 0 15px;
+}
+.user_status {
+  display: block;
+  font-size: 16px;
+  color: #27282E;
+  line-height: 20px;
+}
+.user_add {
+  width: 150px;
+  height: 100%;
+  margin-left: 15px;
+  border-left: 1px solid #27282E;
+  transition: all 0.3s;
+}
+.user_add:hover {
+  background-color: #383942;
+}
+.user_add:disabled {
+  color: #383942;
+  cursor: default;
+}
+.user_add:disabled:hover {
+  background-color: transparent;
+}

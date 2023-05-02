@@ -1,0 +1,17 @@
+.profile_header {
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
+  padding: 25px 35px 25px 25px;
+  background-image: url('/src/assets/background/rhombs.png');
+  background-size: 15px auto;
+  text-align: right;
+}
+.profile_header .user_name {
+  font-size: 60px;
+  line-height: 55px;
+}
+.profile_header .user_system_name {
+  color: #5b5d6a;
+  font-weight: 600;
+}

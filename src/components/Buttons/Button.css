@@ -1,0 +1,28 @@
+.button_wrapper {
+  padding: 1px;
+  background: linear-gradient(45deg, #a95dff, #76e4ff);
+  clip-path: polygon(0 0, calc(100% - 10px) 0, 100% 10px, 100% 100%, 10px 100%, 0 calc(100% - 10px));
+}
+.button_wrapper.disabled {
+  background: #5b5d6a;
+}
+.button {
+  display: block;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  width: 100%;
+  background-color: #27282E;
+  clip-path: polygon(0 0, calc(100% - 10px) 0, 100% 10px, 100% 100%, 10px 100%, 0 calc(100% - 10px));
+  transition: all 0.3s;
+}
+.button:hover {
+  background-color: #383942;
+}
+.button:disabled {
+  color: #5b5d6a;
+  cursor: default;
+}
+.button:disabled:hover {
+  background-color: #27282E;
+}

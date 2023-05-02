@@ -1,0 +1,24 @@
+.avatars_list_wrapper {
+  position: absolute;
+  bottom: 25px;
+  right: 25px;
+  width: 442px;
+}
+.avatars_list {
+  padding: 25px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.avatars_list_item {
+  width: 65px;
+  height: 65px;
+  padding: 5px;
+}
+.avatars_list_item.selected {
+  border: 1px solid #5b5d6a;
+  background-color: #383942;
+  cursor: default;
+}
+.avatars_list_item:hover {
+  background-color: #383942;
+}

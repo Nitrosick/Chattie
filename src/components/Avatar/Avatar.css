@@ -1,0 +1,31 @@
+.avatar_container {
+  padding: 1px;
+  background: linear-gradient(45deg, #a95dff, #76e4ff);
+  box-shadow: 2px 2px 5px -2px black;
+  clip-path: polygon(0 0, calc(100% - 10px) 0, 100% 10px, 100% 100%, 10px 100%, 0 calc(100% - 10px));
+}
+.avatar_container .avatar {
+  width: 100%;
+  height: 100%;
+  background-color: #383942;
+  clip-path: polygon(0 0, calc(100% - 10px) 0, 100% 10px, 100% 100%, 10px 100%, 0 calc(100% - 10px));
+}
+.avatar_container.big {
+  width: 300px;
+  height: 300px;
+}
+.avatar_container.medium {
+  width: 150px;
+  height: 150px;
+}
+.avatar_container.small {
+  width: 55px;
+  height: 55px;
+  box-shadow: none;
+  background: transparent;
+  clip-path: none;
+}
+.avatar_container.small .avatar {
+  filter: drop-shadow(0 0 1px #383942);
+  background: transparent;
+}

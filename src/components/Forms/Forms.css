@@ -1,0 +1,32 @@
+.form_wrapper {
+  padding: 1px;
+  background: linear-gradient(45deg, #a95dff, #76e4ff);
+  clip-path: polygon(0 0, calc(100% - 10px) 0, 100% 10px, 100% 100%, 10px 100%, 0 calc(100% - 10px));
+}
+.form {
+  display: flex;
+  align-items: center;
+  background-color: #27282E;
+  clip-path: polygon(0 0, calc(100% - 10px) 0, 100% 10px, 100% 100%, 10px 100%, 0 calc(100% - 10px));
+}
+.form_input {
+  flex-grow: 1;
+  height: 50px;
+  line-height: 50px;
+  margin: 0 15px;
+}
+.form_submit {
+  height: 50px;
+  border-left: 1px solid #5b5d6a;
+  transition: all 0.3s;
+}
+.form_submit:hover {
+  background-color: #383942;
+}
+.form_submit:disabled {
+  color: #5b5d6a;
+  cursor: default;
+}
+.form_submit:disabled:hover {
+  background-color: transparent;
+}

@@ -1,0 +1,26 @@
+.users_page {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  height: 100%;
+}
+.users_page .users_list_box {
+  flex-grow: 1;
+  overflow-y: scroll;
+}
+.users_page .users_list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-bottom: 50px;
+  padding-right: 25px;
+}
+.users_page .users_list_shadow {
+  position: absolute;
+  left: 0;
+  bottom: 75px;
+  right: 0;
+  height: 50px;
+  background: linear-gradient(transparent, #27282E);
+}

@@ -1,0 +1,29 @@
+.main_logo {
+  cursor: default;
+  text-transform: uppercase;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 0 25px;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.main_logo_splitter {
+  width: 3px;
+  height: 20px;
+  background-color: #FFFFFF;
+  animation: blink 1.2s linear infinite;
+}
+.main_logo_part_2 {
+  color: #5b5d6a;
+}
