@@ -8,7 +8,11 @@ import { Loader } from '@components/Loader/Loader';
 import { setDialogsOpened } from '@redux/reducers/control/actions';
 import './Dialogs.css';
 
-export const Dialogs: FC = () => {
+interface DialodProps {
+    setCurrentUser: React.Dispatch<React.SetStateAction<number>>;
+};
+
+export const Dialogs: FC<DialodProps> = ({ setCurrentUser }) => {
     const dispatch = useDispatch();
     const dialogsList: IDialog[] = useSelector((state: StoreState) => state.messages.dialogs);
     const loading: boolean = useSelector((state: StoreState) => state.messages.dialogsLoading);
@@ -32,7 +36,10 @@ export const Dialogs: FC = () => {
                             className="menu_item"
                             key={dialog.id}
                             to={`/chats/${dialog.id}`}
-                            onClick={() => {dispatch(setDialogsOpened(false))}}
+                            onClick={() => {
+                                dispatch(setDialogsOpened(false));
+                                setCurrentUser(dialog.user_id);
+                            }}
                         >
                             <span>{dialog.nickname}</span>
                         </NavLink>

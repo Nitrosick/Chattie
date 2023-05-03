@@ -11,14 +11,17 @@
 }
 .avatar_container.big {
   width: 300px;
+  min-width: 300px;
   height: 300px;
 }
 .avatar_container.medium {
   width: 150px;
+  min-width: 150px;
   height: 150px;
 }
 .avatar_container.small {
   width: 55px;
+  min-width: 55px;
   height: 55px;
   box-shadow: none;
   background: transparent;
