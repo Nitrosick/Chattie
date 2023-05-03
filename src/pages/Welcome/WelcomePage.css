@@ -7,11 +7,12 @@
 }
 .welcome_page_title {
   text-transform: uppercase;
-  line-height: 50px;
+  line-height: 60px;
   padding-bottom: 16px;
   margin-bottom: 16px;
   border-bottom: 1px solid #5b5d6a;
   letter-spacing: 2px;
+  text-align: center;
 }
 .welcome_page_mark {
   margin: 0 16px;
@@ -20,4 +21,20 @@
   background: linear-gradient(45deg, #a95dff, #76e4ff);
   -webkit-background-clip: text;
   -webkit-text-stroke: 3px transparent;
+}
+.welcome_page_desc {
+  text-align: center;
+}
+@media screen and (max-width: 480px) {
+  .welcome_page_title {
+    font-size: 42px;
+    line-height: 42px;
+    padding-bottom: 12px;
+    margin-bottom: 12px;
+    letter-spacing: 2px;
+  }
+  .welcome_page_mark {
+    margin: 0 10px;
+    font-size: 42px;
+  }
 }

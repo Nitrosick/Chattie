@@ -29,7 +29,9 @@ export const User: FC<UserProps> = ({ info }) => {
                 <Avatar size={AvatarSize.Small} url={info.avatar_url ? info.avatar_url : placeholder} />
 
                 <div className="user_info">
-                    <span className="user_name">{info.nickname}</span>
+                    <span className="user_name">
+                        {info.nickname.length < 15 ? info.nickname : info.nickname.substring(0, 15) + '...'}
+                    </span>
                     {info.city &&
                         <>
                             <span className="user_splitter">|</span>
@@ -45,9 +47,7 @@ export const User: FC<UserProps> = ({ info }) => {
                     className="user_add"
                     onClick={() => { onStartChat(info.id) }}
                     disabled={disabled}
-                >
-                    Start chat
-                </button>
+                ></button>
             }
         </li>
     );

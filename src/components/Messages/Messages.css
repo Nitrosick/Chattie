@@ -17,3 +17,16 @@
   height: 50px;
   background: linear-gradient(transparent, #27282E);
 }
+@media screen and (max-width: 1200px) {
+  .messages {
+    padding-right: 10px;
+  }
+  .messages_shadow {
+    bottom: 60px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .messages_shadow {
+    bottom: 110px;
+  }
+}

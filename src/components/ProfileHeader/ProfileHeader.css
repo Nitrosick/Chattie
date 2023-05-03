@@ -1,4 +1,5 @@
 .profile_header {
+  position: relative;
   display: flex;
   justify-content: space-between;
   gap: 25px;
@@ -14,4 +15,34 @@
 .profile_header .user_system_name {
   color: #5b5d6a;
   font-weight: 600;
+  text-shadow: 1px 1px 3px black;
+}
+@media screen and (max-width: 1200px) {
+  .profile_header .user_name {
+    font-size: 32px;
+    line-height: 35px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .profile_header {
+    gap: 0;
+  }
+  .profile_header br,
+  .profile_header .user_name {
+    display: none;
+  }
+  .profile_header .user_system_name {
+    position: absolute;
+    top: 25px;
+    right: 35px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .profile_header {
+    padding: 25px;
+  }
+  .profile_header .user_system_name {
+    top: 35px;
+    right: 40px;
+  }
 }

@@ -1,4 +1,5 @@
 .profile_info_item {
+  max-width: 100%;
   display: flex;
   align-items: center;
   gap: 10px;
@@ -9,6 +10,7 @@
   font-size: 16px;
   padding-left: 10px;
   border-left: 10px solid #383942;
+  white-space: nowrap;
   cursor: pointer;
 }
 .profile_info_item_title::after {
@@ -16,4 +18,12 @@
 }
 .profile_info_item_value {
   cursor: pointer;
+}
+@media screen and (max-width: 480px) {
+  .profile_info_item_title {
+    font-size: 12px;
+  }
+  .profile_info_item_value {
+    font-size: 16px;
+  }
 }

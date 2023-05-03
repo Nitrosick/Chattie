@@ -1,12 +1,17 @@
-import { FC } from 'react';
+import { FC, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { Messages } from '@components/Messages/Messages';
 import { Dialogs } from '@components/Dialogs/Dialogs';
 import { SendMessageForm } from '@components/Forms/SendMessageForm/SendMessageForm';
+import { useDispatch } from 'react-redux';
+import { setDialogsOpened } from '@redux/reducers/control/actions';
 import './ChatsPage.css';
 
 export const ChatsPage: FC = () => {
   const params = useParams();
+  const dispatch = useDispatch();
+
+  useEffect(() => {dispatch(setDialogsOpened(true))}, [dispatch]);
 
   return (
     <div className="chats_page">

@@ -5,7 +5,7 @@
   display: flex;
   align-items: center;
   gap: 5px;
-  padding: 0 25px;
+  padding-left: 25px;
 }
 @keyframes blink {
   0% {

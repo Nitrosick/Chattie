@@ -8,5 +8,11 @@
 .profile_page_edit_tip {
   font-size: 16px;
   color: #5b5d6a;
+  text-align: right;
   cursor: default;
+}
+@media screen and (max-width: 480px) {
+  .profile_page_edit_tip {
+    text-align: center;
+  }
 }

@@ -4,12 +4,14 @@ import { usersReducer } from './reducers/users/users';
 import { messagesReducer } from './reducers/messages/messages';
 import { profileReducer } from './reducers/profile/profile';
 import { authReducer } from './reducers/auth/auth';
+import { controlReducer } from './reducers/control/control';
 
 const reducers = combineReducers({
     users: usersReducer,
     messages: messagesReducer,
     profile: profileReducer,
-    auth: authReducer
+    auth: authReducer,
+    control: controlReducer
 });
 
 export const store = configureStore({

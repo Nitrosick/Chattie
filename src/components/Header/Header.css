@@ -1,0 +1,18 @@
+.header_wrapper {
+  display: none;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px;
+}
+@media screen and (max-width: 992px) {
+  .header_wrapper {
+    display: block;
+  }
+}
+@media screen and (max-width: 480px) {
+  .header .main_logo {
+    display: none;
+  }
+}

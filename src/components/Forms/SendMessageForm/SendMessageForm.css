@@ -1,3 +1,8 @@
 .send_message_submit {
   width: 100px;
 }
+@media screen and (max-width: 480px) {
+  .send_message_submit {
+    width: 100%;
+  }
+}
