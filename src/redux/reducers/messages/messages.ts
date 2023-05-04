@@ -24,6 +24,10 @@ export const messagesReducer: Reducer<MessagesState, MessagesActions> = (state =
                 lastMessageId: action.lastId ? action.lastId : state.lastMessageId
             };
         case ADD_MESSAGE:
+            state.messages.forEach(msg => {
+                if (msg.id === action.message.id) return state;
+            });
+
             return {
                 ...state,
                 messages: [...state.messages, action.message],
